@@ -5,14 +5,13 @@ body{
 .navbar {
     background-color: #69B3E7;
 
-    /*maximize the width of the pg w navbar*/
     position: fixed;
-    width: 100%;
+    width: 100%; /*maximize the width of the pg w navbar*/
     top: 0;
     left: 0;
     display: flex;
-    align-items: center; /* Center the items vertically */
-    justify-content: space-between; /* Distribute space between logo and links */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar a {
@@ -24,14 +23,16 @@ body{
     font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .navbar a:hover {
-    background-color: #ffffff;
-    color: black;
+    background-color: #8cc4eb;
 }
 
 .appointment {
     background-color: #FFC72C;
+}
+
+.navbar .appointment:hover {
+    background-color: #f3cb5f;
 }
 
 .logo img{
