@@ -1,0 +1,40 @@
+body{
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    background-color: #69B3E7;
+
+    /*maximize the width of the pg w navbar*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center; /* Center the items vertically */
+    justify-content: space-between; /* Distribute space between logo and links */
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none; /*no link underline*/
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.appointment {
+    background-color: #FFC72C;
+}
+
+.logo img{
+    width: 40px;
+    height: 30px;
+}
