@@ -1,3 +1,4 @@
+# LIU Brooklyn Mental Health Counseling Services Website Re-design
 Students at Long Island University Brooklyn campus are facing lacking mental health resources. Despite high levels of stress and academic pressure, there is a lack of support from the campus's mental health facilities. This project aims to close that gap by improving the way students access mental health services.
 
 Objectives And Goals:
