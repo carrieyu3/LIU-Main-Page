@@ -1,10 +1,15 @@
-body{
+body {
     background-color: #FFFFFF;
+    padding-bottom: 30px;
+    padding-top: 60px;  /* Add top padding equal to or larger than the navbar height */
+}
+
+#about, #contact, #faq {
+    scroll-margin-top: 70px;
 }
 
 .navbar {
     background-color: #69B3E7;
-
     position: fixed;
     width: 100%; /*maximize the width of the pg w navbar*/
     top: 0;
@@ -12,6 +17,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000; /* Ensure navbar stays on top */
 }
 
 .navbar a {

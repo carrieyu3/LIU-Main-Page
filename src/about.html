@@ -7,23 +7,29 @@
   <!-- Google Fonts: Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/main.css" />
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+  <header>
     <div class="navbar">
         <a class="logo" href="index.html" href="./index.html"> 
           <img src="../assets/LIU_logo.png" alt="LIU Logo"> <!-- aka the home button for home page-->
         </a>
-        
+    
     <div class="links">
-        <a href="about.html">About</a>
+        <a href="#about">About</a>
         <a href="events.html">Events</a>
-        <a href="contact.html">Contact</a>
-        <a href="FAQ.html">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
         <a class = "appointment" href="appointment.html">Book Appointment</a>
     </div>
     </div>
+  </header>
 
+<!--To Do: Improve Readability-->
+
+  <main>
    <!-- Hero Section -->
    <section class="hero" id="home">
     <h1 class="hero-title">The Center at LIU Brooklyn Psychological Services</h1>
@@ -35,12 +41,12 @@
     </div>
   </section>
 
-  <!-- Support Section -->
-  <section class="support">
-    <div class="support-info"> 
-      <h2>Types of Support You Can Find</h2>
-      <p>We offer confidential counseling for a range of student needs, supporting your emotional and academic well-being.</p>
-    </div>
+    <!-- Support Section -->
+    <section class="support" id="about">
+      <div class="support-info"> 
+        <h2 >Types of Support You Can Find</h2>
+        <p>We offer confidential counseling for a range of student needs, supporting your emotional and academic well-being.</p>
+      </div>
 
     <div class="card-wrapper">
       <div class="card">
@@ -52,15 +58,21 @@
       </div>
 
       <div class="card">
-        <img src="/assets/card_image(2).png" alt="Man holding his head in distress">
+        <img src="/assets/card_image(2).jpeg" alt="Man holding his head in distress">
         <div class="card-content">
           <h3>Finding Balance at Home</h3>
           <p>Family dynamics and home life can sometimes be sources of stress. Our counselors provide a safe space to explore and address these challenges, helping you build healthier relationships and coping strategies.</p>
         </div>
       </div>
+
+      <div class="card">
+        <img src="/assets/card_image(3).jpeg" alt="Woman staring off to the distance in dismay.">
+        <div class="card-content">
+          <h3>Placeholder Text</h3>
+          <p>FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
     </div>
-
-
   </section>
 
   <!-- Commitment Section -->
@@ -76,7 +88,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Visit Us or Contact Us</h2>
     <div class="contact-info">
       <img src="/assets/map.png" alt="LIU Brooklyn map">
@@ -115,6 +127,7 @@
     </div>
   </section>
 
+<!--Testimonals | Please refer here for styling: -->
   <section class="testimonals">
     <div class="testimonals-wrapper">
       <h2>Hear From Our Students</h2>
@@ -142,8 +155,97 @@
       </div>
     </div>
   </section>
-    
+
+  <!--FAQ'S-->
+  <section class="faq" id="faq">
+    <div class="faq_wrapper">
+      <h2>Frequently Asked Questions</h2>
+      <button type="button" class="collapsible">How do I make an appointment?</button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button type="button" class="collapsible">Am I eligible for counseling?</button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button type="button" class="collapsible">Does the PSC have session limits></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button type="button" class="collapsible">Will my parents/professors/the University know if I came to counseling></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button type="button" class="collapsible">Can I do text or chat-based therapy?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button type="button" class="collapsible">Where is the clinic located?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">I'm not going through anything that serious, do I need counseling?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">Are all PSC therapists students?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">Can I choose my own therapist?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">What will therapy be like?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">Can I get medication or prescription refills at the PSC?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">Are all PSC therapists students?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">What is psychological assesment?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">Can I get tested for ADD/ADHD/a learning disability here?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">What if I'm not happy with my therapist?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div> <button type="button" class="collapsible">Does the PSC take my insurance? If not, how much does counseling cost out-of-pocket?></button>
+      <div class="content">
+        <p>Lorem ipsum...</p>
+      </div>
+    </div>
+  </section>
+  </main>
+<!--Footer | Social Media Icons Not Showing Up-->
   <footer>
+      <hr>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h2 id="">Connect With Us</h2>
+          <p>Prioritizing your mental health is an essential part of your overall well-being. We understand that seeking support can be a significant step, and we're here to make that process as comfortable and accessible as possible. Our confidential services are designed to provide you with the tools and support you need to navigate life's challenges. Reach out to us to begin your journey towards a healthier, more balanced life.</p>
+
+          <h3> Socials</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </div>
+            <div class="footer-tabs">
+              <a href="#about">About</a>
+              <a href="events.html">Events</a>
+              <a href="#contact">Contact</a>
+              <a href="#faq">FAQ</a>
+              <a class = "appointment" href="appointment.html">Book Appointment</a>
+             </div>
+        </div>
+      </div>
   </footer>
 </body>
 </html>
