@@ -4,7 +4,7 @@ body {
     padding-top: 60px;  /* Add top padding equal to or larger than the navbar height */
 }
 
-#home, #about, #events, #contact, #faq {
+#home, #about, #events, #contact, #faq, #appointment {
     scroll-margin-top: 70px;
 }
 
@@ -45,3 +45,13 @@ body {
     width: 40px;
     height: 30px;
 }
+
+.counselor-1, .counselor-2, .counselor-3, .counselor-4{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.counselor-1:hover, .counselor-2:hover, .counselor-3:hover, .counselor-4:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
