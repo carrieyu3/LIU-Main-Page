@@ -5,7 +5,7 @@ body {
 }
 
 #home, #about, #events, #contact, #faq, #appointment {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 80px;
 }
 
 .navbar {
@@ -54,4 +54,16 @@ body {
 
 .counselor-1:hover, .counselor-2:hover, .counselor-3:hover, .counselor-4:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-img-counselor1, .card-img-counselor2, .card-img-counselor3, .card-img-counselor4{
+    width: 100%;
+    height: 45%;
+}
