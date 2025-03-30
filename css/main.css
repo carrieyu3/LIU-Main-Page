@@ -57,20 +57,37 @@ body, html {
 /* Hero */
 .hero-image-container {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/hero_img.png");
+    background-image: url("assets/hero_img.png");
     /* Set a specific height + width */
-    width: 100vw;
-    height: 90vh;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    display: flex;
   }
 
   #hero_img {
-    
+    width: 100vw;
+    height: 90vh;
+    opacity: 0.9;
   }
+
+
+  
+.hero-title{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  line-height: 2cm;
+  padding-top: 5%;
+  border: 2px solid red;
+}
+
 
 
 
