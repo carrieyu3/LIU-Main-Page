@@ -72,8 +72,8 @@ body {
     color: #69B3E7;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+/*collapsible effect for the questions*/
+.accordion{
     background-color: #69B3E7;
     color: white;
     padding: 18px;
@@ -84,13 +84,12 @@ body {
     transition: 0.4s;
 }
   
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active, .accordion:hover{
     background-color: #97cef6;
 }
-  
-/* Style the accordion panel. Note: hidden by default */
-.panel {
+
+/*answers in collapsible*/
+.panel{
     padding: 0 18px;
     background-color: white;
     color: #69B3E7;
@@ -99,15 +98,15 @@ body {
     transition: max-height 0.2s ease-out;
 }
 
-.accordion:after {
-    content: '>'; /* Unicode character for "plus" sign (+) */
+.accordion:after{
+    content: '>';
     font-size: 13px;
     color: white;
     float: right;
     margin-left: 5px;
 }
   
-.active:after {
-    content: "˅"; /* Unicode character for "minus" sign (-) */
+.active:after{
+    content: "˅";
     color: white;
 }
