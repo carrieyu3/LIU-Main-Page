@@ -1,4 +1,5 @@
 body {
+    font-family: montserrat;
     background-color: #FFFFFF;
     padding-bottom: 30px;
     padding-top: 60px;  /* Add top padding equal to or larger than the navbar height */
@@ -29,11 +30,11 @@ body {
     font-size: 17px;
 }
 
-.navbar a:hover {
+.navbar a:hover{
     background-color: #8cc4eb;
 }
 
-.appointment {
+.appointment{
     background-color: #FFC72C;
 }
 
@@ -52,8 +53,16 @@ body {
     padding: 10px;
 }
 
+.appt-header{
+    color: #69B3E7;
+}
+
+.appt-link a{
+    color: #69B3E7;
+}
+
 .counselor-1:hover, .counselor-2:hover, .counselor-3:hover, .counselor-4:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 #FFC72C;
 }
 
 .cards{
@@ -76,6 +85,7 @@ body {
 .accordion{
     background-color: #69B3E7;
     color: white;
+    font-size: 14px;
     padding: 18px;
     width: 100%;
     text-align: left;
@@ -93,9 +103,11 @@ body {
     padding: 0 18px;
     background-color: white;
     color: #69B3E7;
+    font-size: 14px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    border-style: outset;
 }
 
 .accordion:after{
@@ -109,4 +121,8 @@ body {
 .active:after{
     content: "˅";
     color: white;
+}
+
+.about{
+    background-color: #FFC72C
 }
