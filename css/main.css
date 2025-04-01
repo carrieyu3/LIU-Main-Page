@@ -1,8 +1,10 @@
-body {
+body, html {
     font-family: montserrat;
     background-color: #FFFFFF;
     padding-bottom: 30px;
-    padding-top: 60px;  /* Add top padding equal to or larger than the navbar height */
+    padding-top: 30px;  /* Add top padding equal to or larger than the navbar height */
+    height: 100%;
+    margin: 0;
 }
 
 #home, #about, #events, #contact, #faq, #appointment {
@@ -30,7 +32,7 @@ body {
     font-size: 17px;
 }
 
-.navbar a:hover{
+.about-events-contact-faq:hover{
     background-color: #8cc4eb;
 }
 
@@ -38,7 +40,7 @@ body {
     background-color: #FFC72C;
 }
 
-.navbar .appointment:hover {
+.appointment:hover {
     background-color: #f3cb5f;
 }
 
@@ -59,6 +61,11 @@ body {
 
 .appt-link a{
     color: #69B3E7;
+    text-decoration: none;
+}
+
+.appt-link a:hover{
+    color: #FFC72C;
 }
 
 .counselor-1:hover, .counselor-2:hover, .counselor-3:hover, .counselor-4:hover {
@@ -83,8 +90,8 @@ body {
 
 /*collapsible effect for the questions*/
 .accordion{
-    background-color: #69B3E7;
-    color: white;
+    background-color: white;
+    color: #69B3E7;
     font-size: 14px;
     padding: 18px;
     width: 100%;
@@ -92,10 +99,13 @@ body {
     border: none;
     outline: none;
     transition: 0.4s;
+    border-style: groove;
 }
   
 .active, .accordion:hover{
-    background-color: #97cef6;
+    background-color: #69B3E7;
+    color: white;
+    box-shadow: 0 8px 13px 0 #FFC72C;
 }
 
 /*answers in collapsible*/
@@ -107,22 +117,70 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    border-style: outset;
 }
 
 .accordion:after{
     content: '>';
     font-size: 13px;
-    color: white;
+    color: #69B3E7;
     float: right;
     margin-left: 5px;
 }
-  
+
 .active:after{
     content: "˅";
     color: white;
 }
 
 .about{
-    background-color: #FFC72C
+    background-color: #FFC72C;
+}
+
+.about:hover{
+    background-color: #f3cb5f;
+}
+
+.footer-container{
+    background-color: #69B3E7;
+    padding: 30px;
+    color: white;
+}
+
+.social-links a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.social-links a:hover{
+    color: #FFC72C;
+}
+
+.footer-button{
+    text-align: right;
+}
+
+.footer-appointment{
+    background-color: #FFC72C;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.footer-appointment:hover{
+    background-color: #f3cb5f;
+}
+
+[aria-label="Arrow-Up"] {
+    color:#FFC72C;
+    font-size: 45px;
+    align-items: center;
+}
+
+[aria-label="Arrow-Up"]:hover{
+    color: #f3cb5f;
+}
+
+.Arrow-Up{
+    text-align: center;
 }

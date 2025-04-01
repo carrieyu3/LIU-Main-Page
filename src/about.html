@@ -12,6 +12,7 @@
 </head>
 <body>
   <header>
+
     <div class="navbar">
         <a class="logo" href="#home"> 
           <img src="../assets/new_LIU_logo.png" alt="LIU Logo"> <!-- aka the home button for home page-->
@@ -24,10 +25,10 @@
         </style>
 
     <div class="links">
-        <a href="#about">About</a>
-        <a href="#events">Events</a>
-        <a href="#contact">Contact</a>
-        <a href="#faq">FAQ</a>
+        <a class="about-events-contact-faq" href="#about">About</a>
+        <a class="about-events-contact-faq" href="#events">Events</a>
+        <a class="about-events-contact-faq" href="#contact">Contact</a>
+        <a class="about-events-contact-faq" href="#faq">FAQ</a>
         <a class = "appointment" href="appointment.html">Book Appointment</a>
     </div>
     </div>
@@ -248,39 +249,49 @@
     </div>
   </section>
 
+  <br>
+  <br>
+  <br>
 
   </main>
 <!--Footer | Social Media Icons Not Showing Up-->
-  <footer>
-      <hr>
-      <div class="footer-container">
-        <div class="footer-content">
-          <h2 id="">Connect With Us</h2>
-          <p>Prioritizing your mental health is an essential part of your overall well-being. We understand that seeking support can be a significant step, and we're here to make that process as comfortable and accessible as possible. Our confidential services are designed to provide you with the tools and support you need to navigate life's challenges. Reach out to us to begin your journey towards a healthier, more balanced life.</p>
 
-          <h3> Socials</h3>
-            <div class="social-links">
-              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                <i class="fa-brands fa-square-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                <i class="fa-brands fa-square-instagram"></i>
-              </a>
-              <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                <i class="fa-brands fa-square-twitter"></i>
-              </a>
-            </div>
-            <div class="footer-tabs">
-              <a href="#about">About</a>
-              <a href="events.html">Events</a>
-              <a href="#contact">Contact</a>
-              <a href="#faq">FAQ</a>
-              <a class = "appointment" href="appointment.html">Book Appointment</a>
-             </div>
-        </div>
+    <footer class="footer-container">
+      <div class="footer-content">
+        <h2 id="">Connect With Us</h2>
+        <p class = "footer-text">Prioritizing your mental health is an essential part of your overall well-being. We understand that seeking support can be a significant step, and we're here to make that process as comfortable and accessible as possible. Our confidential services are designed to provide you with the tools and support you need to navigate life's challenges. Reach out to us to begin your journey towards a healthier, more balanced life.</p>
+
+        <h3>Socials</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+
+          </div>
+
+          <div class="footer-button">
+            <a class = "footer-appointment" href="appointment.html">Book Appointment</a>
+          </div>
+
+          <!--Back to the top of the page-->
+          <div class="Arrow-Up">
+            <a href="#home" aria-label="Arrow-Up">
+              <i class="fas fa-angle-double-up"></i>
+            </a>
+          </div>
+
       </div>
-  </footer>
+    </div>
 
   <script src="../js/main.js"></script>
+
 </body>
 </html>
