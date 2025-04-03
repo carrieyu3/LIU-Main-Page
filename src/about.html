@@ -10,22 +10,28 @@
   <!--Icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="navbar">
-        <a class="logo" href="index.html" href="./index.html"> 
-          <img src="../assets/LIU_logo.png" alt="LIU Logo"> <!-- aka the home button for home page-->
+      <div class="navbar">
+        <a class="logo" href="#home"> 
+          <img src="../assets/new_LIU_logo.png" alt="LIU Logo"> <!-- aka the home button for home page-->
         </a>
-    
-      <div class="links">
-          <a href="#about">About</a>
-          <a href="events.html">Events</a>
-          <a href="#contact">Contact</a>
-          <a href="#faq">FAQ</a>
-          <a class = "appointment" href="appointment.html">Book Appointment</a>
-      </div>
+
+        <style>
+          html {
+            scroll-behavior: smooth;
+          }
+        </style>
+
+    <div class="links">
+        <a class="about-events-contact-faq" href="#about">About</a>
+        <!-- (COMMENTING OUT FOR NOW) <a class="about-events-contact-faq" href="#events">Events</a>-->
+        <a class="about-events-contact-faq" href="#contact">Contact</a>
+        <a class="about-events-contact-faq" href="#faq">FAQ</a>
+        <a class = "appointment" href="appointment.html">Book Appointment</a>
+    </div>
     </div>
   </header>
 
@@ -37,10 +43,10 @@
     <div class="hero-image-container">
       <img src="/assets/hero_img.png" alt="Two hands holding a printed cut-out heart" id="hero_img">
     </div>
-    <h1 class="hero-title">The Center at LIU <br> Brooklyn Psychological <br> Services</h1>
+    <h1 class="hero-title">The Center at LIU Brooklyn<br> Psychological Services</h1>
     <div class="hero-subtitle">
       <h3>Your Path to Mental Well-being</h3>
-      <p>Providing confidential and supportive counseling for LIU-Brooklyn students.</p>
+      <p id="subtitle-content">Providing confidential and supportive counseling for LIU-Brooklyn students.</p>
       <button type="button" id="hero-button">Book Appointment</button>
     </div>
   </section>

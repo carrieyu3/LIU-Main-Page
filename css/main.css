@@ -2,23 +2,27 @@ body {
     background-color: #FFFFFF;
     padding-bottom: 30px;
     padding-top: 60px;  /* Add top padding equal to or larger than the navbar height */
-    margin: 0%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
+
 }
 
 
 
-body, html {
-    height: 100%; /* ensures entire page takes full viewport height */
+html {
+    min-height: 100vh; /* makes sure content occupies entire screen */
+    scroll-padding-top: 70px; /* Matches navbar height */
 }
-
 
 #about, #contact, #faq {
     scroll-margin-top: 70px;
-}
-
-.navbar {
-    background-color: #69B3E7;
+ }
+ 
+ 
+ .navbar {
+    background-color: rgba(105, 179, 231, 1);
     position: fixed;
     width: 100%; /*maximize the width of the pg w navbar*/
     top: 0;
@@ -27,76 +31,113 @@ body, html {
     align-items: center;
     justify-content: space-between;
     z-index: 1000; /* Ensure navbar stays on top */
-}
-
-.navbar a {
+    padding: 20px;
+ }
+ 
+ 
+ .navbar a {
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 15px; /*40px for figma */
     text-decoration: none; /*no link underline*/
     font-size: 17px;
-}
-
-.navbar a:hover {
+ }
+ 
+ 
+ .navbar a:hover {
     background-color: #8cc4eb;
-}
-
-.appointment {
+ }
+ 
+ 
+ .appointment {
     background-color: #FFC72C;
-}
-
-.navbar .appointment:hover {
+ }
+ 
+ 
+ .navbar .appointment:hover {
     background-color: #f3cb5f;
-}
-
-.logo img{
-    width: 40px;
-    height: 30px;
-}
-
+ }
+ 
 /* Hero */
+
+
+  #hero_img {
+    width: 100%;
+    height: auto;
+    opacity: 0.65;
+    display: block;
+  }
+
 .hero-image-container {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: url("assets/hero_img.png");
-    /* Set a specific height + width */
-    /* Position and center the image to scale nicely on all screens */
+    background-image: url(hero_img.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    padding-top: 40px;
-  }
-
-  #hero_img {
-    width: 100vw;
-    height: auto;
-    opacity: 0.85;
-  }
-
-
-  
+    min-height: 70vh;
+    padding-top: 10px; /* Ensure the navbar doesn't overlap */
+    margin-top: 60px;
+}
 .hero-title{
   display: flex;
   justify-content: flex-start;
   position: absolute;
-  top: 10%;
+  top: 0%;
   left: 5%;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 2cm;
+  font-size: clamp(14px, 8vw, 50px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
+  font-weight: 600;
   padding-top: 11%;
-  border: 2px solid red;
 }
 
 .hero-subtitle{
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50vw;
+    top: 75%;
+    right: 2%;
+}
+
+.hero-subtitle h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+#subtitle-content {
+    font-size: 20px;
 
 }
 
+#hero-button {
+    background-color: #FFC72C;
+    color: white;
+    border: none;
+    width: 20vw;
+    padding: 15px;
+    font-size: 17px;
+    margin-top: 3%;
+  }
 
 
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .hero-image-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .hero-title {
+        font-size: clamp(20px, 8vw, 40px);
+        text-align: center;
+        max-width: 90%;
+        margin-top: 130px;
+    }
+
+
+}
 
 
 
