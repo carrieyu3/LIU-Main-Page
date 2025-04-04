@@ -179,7 +179,6 @@ html {
     padding-top: 6px;
 }
  .card-wrapper {
-    border: 2px solid red ;
     display: flex;
     gap: 40px;
     margin: 0 auto;
@@ -229,13 +228,12 @@ html {
     color:#69B3E7;
     font-weight: 900;
     font-size: 40px;
-    margin-left: 3%;
+    margin-left: 1%;
     width: 50%;
     padding: 20px;
 }
 
 .support-info p {
-    border:2px solid red;
     margin-left: 3%;
     width: 40%;
     font-size: 25px;
@@ -353,8 +351,43 @@ html {
     flex-direction: row;
     border: 3px solid blue;
 }
+.counselor-content{
+    margin-left: 3%;
+    width: 60%;
+    padding-top: 6px;
+}
+.counselor-content h2{
+    color:#69B3E7;
+    font-size: 40px;
+    font-weight: bold;
+}
+.counselor-content p {
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 1.2rem;
+    width: 60%;
+}
+
+.collapsible-list{
+    padding-bottom: 40px;
+}
+
+#dedicated-button {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+}
+
+.dedicated-button {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
 .counselor-content, .counselor-image {
-    border: 1px solid red;
     padding: 10px;
   }
 
@@ -374,21 +407,24 @@ html {
   .testimonials {
     text-align: center;
     padding: 50px 20px;
-    border: 5px solid black ;
   }
   
+  .testimonial-content h4 {
+    color: white;
+  }
+
   .testimonials-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    border: 5px solid blue ;
   }
   
   .testimonials-header h2 {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: bold;
+    color: #69B3E7;
   }
   
   .testimonials-header p {
@@ -403,7 +439,6 @@ html {
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
-    border: 5px solid pink;
   }
   
   .testimonial-card {
@@ -555,7 +590,6 @@ html {
 
 .commitment h2{
     color:#69B3E7;
-    border: 2px solid purple ;
     max-width: 50%;
 }
 .commitment-content {
@@ -616,7 +650,12 @@ html {
     padding-left: 40px;
     padding-right: 40px;
 }
-
+#contact-heading{
+    margin-left: 3%;
+    width: 60%;
+    padding-top: 6px;
+    color: #69B3E7;
+}
 .contact-info img {
     flex: 1; /* Makes it take equal space */
     width: 50%; /* Ensures responsiveness */
@@ -628,7 +667,7 @@ html {
 .map-text {
     flex: 1; /* Ensures equal width as the image */
     background-color: #69B3E7;
-    border: 2px solid red;
+    border-left: 8px solid #FFC72C;
     height: 72vh; /* Matches image height */
     display: flex;
     justify-content: center;
@@ -641,6 +680,8 @@ html {
 .contact p, .contact a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
