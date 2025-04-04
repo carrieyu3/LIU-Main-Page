@@ -172,11 +172,18 @@ html {
 .support-info {
     font-size: 25px;
 }
+
+.commitment h2{
+    margin-left: 3%;
+    width: 60%;
+    padding-top: 6px;
+}
  .card-wrapper {
+    border: 2px solid red ;
     display: flex;
     gap: 40px;
     margin: 0 auto;
-    padding: 40px 40px;
+    padding: 60px 60px;
   }
 
 
@@ -224,12 +231,16 @@ html {
     font-size: 40px;
     margin-left: 3%;
     width: 50%;
+    padding: 20px;
 }
 
-.support p {
+.support-info p {
+    border:2px solid red;
     margin-left: 3%;
     width: 40%;
-    border:2px solid blue;
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 3%;
 }
 
 .counselor-1, .counselor-2, .counselor-3, .counselor-4{
@@ -271,9 +282,11 @@ html {
   
   .commitment-text p {
     font-size: 16px;
+    font-size: clamp(1px, 3vw, 16px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
     font-weight: 400;
     line-height: 1.6;
   }
+
   
   /* Right Column: Image */
   .commitment-image {
@@ -437,7 +450,6 @@ html {
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    border: 2px solid red;
     padding-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
@@ -477,7 +489,6 @@ html {
 }
 
 #yurr {
-    border: 2px solid black;
     padding: 20px; 
     text-align: left;
 }
@@ -488,7 +499,6 @@ html {
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    border: 2px solid red;
     padding: 30px;
     padding-left: 40px;
     padding-right: 40px;
