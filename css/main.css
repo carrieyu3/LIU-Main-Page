@@ -37,7 +37,12 @@ html {
     font-size: 17px;
 }
 
-/* hero */
+
+
+/* Hero */
+
+
+
 
 #hero_img {
     width: 100%;
@@ -45,8 +50,9 @@ html {
     opacity: 0.65;
     display: block;
   }
-
-.hero-image-container {
+ 
+ 
+ .hero-image-container {
     background-image: url(hero_img.png);
     background-size: cover;
     background-position: center;
@@ -57,19 +63,19 @@ html {
     padding-top: 10px; /* Ensure the navbar doesn't overlap */
     margin-top: 60px;
  }
- 
  .hero-title{
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-    top: 0%;
-    left: 5%;
-    font-size: clamp(14px, 8vw, 50px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
-    font-weight: 600;
-    padding-top: 11%;
-   }
-   
-   .hero-subtitle{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  font-size: clamp(14px, 8vw, 50px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
+  font-weight: 600;
+  padding-top: 11%;
+ }
+ 
+ 
+ .hero-subtitle{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -77,6 +83,19 @@ html {
     top: 75%;
     right: 2%;
  }
+ 
+ 
+ .hero-subtitle h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+ }
+ #subtitle-content {
+    font-size: 20px;
+ 
+ 
+ }
+ 
  
  #hero-button {
     background-color: #FFC72C;
@@ -87,8 +106,12 @@ html {
     font-size: 17px;
     margin-top: 3%;
   }
-
-  @media (max-width: 768px) {
+ 
+ 
+ 
+ 
+ /* Media Query for Smaller Screens */
+ @media (max-width: 768px) {
     .hero-image-container {
         flex-direction: column;
         align-items: center;
@@ -107,7 +130,6 @@ html {
  
  
  }
- 
  
 .about-events-contact-faq:hover{
     background-color: #8cc4eb;
