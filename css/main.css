@@ -337,6 +337,119 @@ html {
     color: #69B3E7;
 }
 
+.faq_wrapper {
+    padding: 60px;
+}
+
+/*********collapsible for counselors*******/
+
+/*flex styling first*/
+
+.counselor-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid blue;
+}
+.counselor-content, .counselor-image {
+    border: 1px solid red;
+    padding: 10px;
+  }
+
+  .counselor-content {
+    width: 50%;
+  }
+  .counselor-image {
+    width: 40%;
+  }
+
+  .counselor-image img{
+    width: 500px;
+    height: 550px;
+  }
+
+  /*styling*/
+  .testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    border: 5px solid black ;
+  }
+  
+  .testimonials-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 5px solid blue ;
+  }
+  
+  .testimonials-header h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .testimonials-header p {
+    font-size: 1.5625rem;
+    color: #000000;
+    padding-top: 10px;
+    margin-bottom: 60px;
+  }
+  
+  .testimonials-card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    border: 5px solid pink;
+  }
+  
+  .testimonial-card {
+    background: #69B3E7; /* Light blue */
+    border-radius: 30px;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonial-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background: #FFD24C; /* Yellow border on the left */
+    border-radius: 15px 0 0 15px;
+  }
+  
+  .testimonial-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .testimonial-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .testimonial-content p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  
+
+
 /*collapsible effect for the questions*/
 .accordion{
     background-color: white;
