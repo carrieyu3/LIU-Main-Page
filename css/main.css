@@ -167,7 +167,8 @@ html {
  
  }
  
- /*About*/
+ /*************************** About ****************/
+
 .support-info {
     font-size: 25px;
 }
@@ -177,6 +178,7 @@ html {
     margin: 0 auto;
     padding: 40px 40px;
   }
+
 
   .card{
     display: flex;
@@ -216,12 +218,27 @@ html {
     font-weight: 400px;
 }
 
+.support h2{
+    color:#69B3E7;
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: 3%;
+    width: 50%;
+}
+
+.support p {
+    margin-left: 3%;
+    width: 40%;
+    border:2px solid blue;
+}
+
 .counselor-1, .counselor-2, .counselor-3, .counselor-4{
     border-radius: 5px;
     padding: 10px;
 }
 
-/* Commitment Section Container */
+/*************************** Commitment Section Container ************/
+
 .commitment-section {
     display: flex;
     flex-wrap: wrap;
@@ -404,22 +421,103 @@ html {
     text-align: center;
 }
 
-.contact-info{
+/**************** Commitment Section ********************/
+
+.commitment {
+    margin-top: 60px;
+}
+
+.commitment h2{
+    color:#69B3E7;
+    border: 2px solid purple ;
+    max-width: 50%;
+}
+.commitment-content {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    border: 2px solid red;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 20px;
 }
 
-.contact-info img{
-    width: 500px;
-    height: 500px;
+
+
+.commit-image img {
+    flex: 1; /* Makes it take equal space */
+    width: 100%; /* Ensures responsiveness */
+    height: 72vh; /* Matches map-text */
+    object-fit: cover; /* Prevents stretching */
+    max-width: 580px;
 }
 
-.map-text{
+.commit-image{
+    padding-bottom: 46px;
+}
+
+.commit-text {
+    flex: 1; /* Ensures equal width as the image */
     background-color: #69B3E7;
+    border-left: 8px solid #FFC72C;
+    height: 60vh; /* Matches image height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 520px;
+    color: white;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 0;
+    text-decoration: none;
 }
 
-.contact p, a{
+#yurr {
+    border: 2px solid black;
+    padding: 20px; 
+    text-align: left;
+}
+
+/**************** Contact Us ********************/
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    border: 2px solid red;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.contact-info img {
+    flex: 1; /* Makes it take equal space */
+    width: 50%; /* Ensures responsiveness */
+    height: 72vh; /* Matches map-text */
+    object-fit: cover; /* Prevents stretching */
+    max-width: 550px;
+}
+
+.map-text {
+    flex: 1; /* Ensures equal width as the image */
+    background-color: #69B3E7;
+    border: 2px solid red;
+    height: 72vh; /* Matches image height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 550px;
+}
+
+.contact p, .contact a {
     color: white;
     text-decoration: none;
 }
+
 
