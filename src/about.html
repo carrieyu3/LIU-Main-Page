@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIU Brooklyn</title>
   <!-- Google Fonts: Montserrat -->
-  <href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="../css/main.css" />
+  <href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="../css/main.css" />
   <!--Icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!--Javascript file-->
+  <script src="../src/script.js"></script>
 </head>
 <body>
   <header>
@@ -46,6 +49,13 @@
         <h3>Your Path to Mental Well-being</h3>
         <p id="subtitle-content">Providing confidential and supportive counseling for LIU-Brooklyn students.</p>
         <button type="button" id="hero-button">Book Appointment</button>
+        <!--js to lead to appointment page-->
+        <script>
+          document.getElementById("hero-button").onclick = function () {
+            window.location.href = "appointment.html"; // Redirects to appointment.html
+          };
+        </script>
+
       </div>
     </section>
  
@@ -59,7 +69,9 @@
 
     <div class="card-wrapper">
       <div class="card">
-        <img src="/assets/card_image(1).png" alt="Frustrated man glaring at his MacBook">
+        <div class="card-image">
+          <img src="/assets/card_image(1).png" alt="Frustrated man glaring at his MacBook">
+        </div>
         <div class="card-content">
           <h3>Navigating Academic Pressures</h3>
           <p>College life can be demanding. We offer support for managing academic stress, test anxiety, and time management challenges. Let us help you achieve your academic goals while maintaining your well-being.</p>
@@ -67,7 +79,9 @@
       </div>
 
       <div class="card">
-        <img src="/assets/card_image(2).jpeg" alt="Man holding his head in distress">
+        <div class="card-image">
+        <img src="/assets/card_image(2).png" alt="Man holding his head in distress">
+      </div>
         <div class="card-content">
           <h3>Finding Balance at Home</h3>
           <p>Family dynamics and home life can sometimes be sources of stress. Our counselors provide a safe space to explore and address these challenges, helping you build healthier relationships and coping strategies.</p>
@@ -75,10 +89,13 @@
       </div>
 
       <div class="card">
-        <img src="/assets/card_image(3).jpeg" alt="Woman staring off to the distance in dismay.">
+        <div class="card-image">
+        <img src="/assets/card_image(3).png" alt="Woman staring off to the distance in dismay.">
+        </div>
         <div class="card-content">
-          <h3>Placeholder Text</h3>
-          <p>FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h3>Building Confidence in Social Settings</h3>
+          <p>Navigating social situations can feel overwhelming. We provide guidance to help you develop strong communication skills, manage social anxiety, and build meaningful connections. Gain the confidence to engage in conversations and create lasting relationships.
+          </p>
         </div>
       </div>
     </div>

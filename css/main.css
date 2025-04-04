@@ -11,10 +11,18 @@ html {
     min-height: 100vh; /* makes sure content occupies entire screen */
  }
  
+ h2 {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+ }
 
 #home, #about, #events, #contact, #faq, #appointment {
     scroll-margin-top: 80px;
 }
+
+/*Navbar*/
 
 .navbar {
     background-color: #69B3E7;
@@ -32,17 +40,35 @@ html {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px;
+   padding: 15px;
+    margin: 0 30px;
     text-decoration: none; /*no link underline*/
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-events-contact-faq:hover{
+    background-color: #8cc4eb;
+}
+
+.appointment{
+    background-color: #FFC72C;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.appointment:hover {
+    background-color: #f3cb5f;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
 }
 
 
 
 /* Hero */
-
-
-
 
 #hero_img {
     width: 100%;
@@ -69,7 +95,7 @@ html {
   position: absolute;
   top: 0%;
   left: 5%;
-  font-size: clamp(14px, 8vw, 50px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
+  font-size: clamp(14px, 8vw, 60px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
   font-weight: 600;
   padding-top: 11%;
  }
@@ -86,13 +112,14 @@ html {
  
  
  .hero-subtitle h3 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 600;
     margin: 0;
+    font-size: clamp(8px, 5vw, 40px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
  }
  #subtitle-content {
-    font-size: 20px;
- 
+    font-size: 28px;
+    font-weight: 400;
  
  }
  
@@ -103,11 +130,15 @@ html {
     border: none;
     width: 20vw;
     padding: 15px;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 800;
     margin-top: 3%;
+    cursor: pointer;
   }
  
- 
+ #hero-button:hover{
+    background-color: #f3cb5f;
+ }
  
  
  /* Media Query for Smaller Screens */
@@ -125,34 +156,73 @@ html {
         max-width: 90%;
         margin-top: 130px;
     }
- 
+    
+    @media (max-width: 1920px) {
+        .hero-subtitle {
+            display: none;
+        }
+    }
  
  
  
  }
  
-.about-events-contact-faq:hover{
-    background-color: #8cc4eb;
+ /*About*/
+.support-info {
+    font-size: 25px;
+}
+ .card-wrapper {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 40px;
+  }
+
+  .card{
+    display: flex;
+    background-color: #69B3E7;
+    border-radius: 30px;
+    color: #f2f2f2;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.card-image img{
+    width: 200%;
+    height: auto;
+    border-radius: 30px;
 }
 
-.appointment{
-    background-color: #FFC72C;
+.card-image{
+    overflow: hidden;
+    padding-top: 5px;
+    padding-left: 3px;
+    border-radius: 30px;
+    background-color: rgba(255, 199, 44, 1);
 }
 
-.appointment:hover {
-    background-color: #f3cb5f;
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.logo img{
-    width: 40px;
-    height: 40px;
+.card-content h3 {
+    font-size: 20px;
+}
+
+.card-content p {
+    font-size: 16px;
+    font-weight: 400px;
 }
 
 .counselor-1, .counselor-2, .counselor-3, .counselor-4{
-    border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
 }
+
+
+/*BOOK Appointment Page*/
 
 .appt-header{
     color: #69B3E7;
