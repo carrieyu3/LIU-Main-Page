@@ -22,6 +22,10 @@ html {
     scroll-margin-top: 80px;
 }
 
+#appointment {
+    scroll-margin-top: 100px;
+}
+
 /*Navbar*/
 
 .navbar {
@@ -304,6 +308,7 @@ html {
 
 .appt-header{
     color: #69B3E7;
+    padding-top: 60px;
 }
 
 .appt-link a{
