@@ -32,6 +32,11 @@ body, html {
     font-size: 17px;
 }
 
+/* hero */
+
+
+
+
 .about-events-contact-faq:hover{
     background-color: #8cc4eb;
 }
@@ -203,3 +208,4 @@ body, html {
     color: white;
     text-decoration: none;
 }
+
