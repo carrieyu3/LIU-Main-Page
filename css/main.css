@@ -46,7 +46,69 @@ html {
     display: block;
   }
 
+.hero-image-container {
+    background-image: url(hero_img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    min-height: 70vh;
+    padding-top: 10px; /* Ensure the navbar doesn't overlap */
+    margin-top: 60px;
+ }
+ 
+ .hero-title{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: clamp(14px, 8vw, 50px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
+    font-weight: 600;
+    padding-top: 11%;
+   }
+   
+   .hero-subtitle{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50vw;
+    top: 75%;
+    right: 2%;
+ }
+ 
+ #hero-button {
+    background-color: #FFC72C;
+    color: white;
+    border: none;
+    width: 20vw;
+    padding: 15px;
+    font-size: 17px;
+    margin-top: 3%;
+  }
 
+  @media (max-width: 768px) {
+    .hero-image-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+ 
+ 
+    .hero-title {
+        font-size: clamp(20px, 8vw, 40px);
+        text-align: center;
+        max-width: 90%;
+        margin-top: 130px;
+    }
+ 
+ 
+ 
+ 
+ }
+ 
+ 
 .about-events-contact-faq:hover{
     background-color: #8cc4eb;
 }
