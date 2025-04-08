@@ -4,27 +4,414 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIU Brooklyn</title>
+  <link rel="icon" type="image/png" href="/assets/new_LIU_logo.png">
   <!-- Google Fonts: Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="../css/main.css" />
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!--Javascript file-->
+  <script src="../src/script.js"></script>
 </head>
 <body>
-    
+  <header>
+
     <div class="navbar">
-        <a class="logo" href="index.html" href="./index.html"> 
-          <img src="../assets/LIU_logo.png" alt="LIU Logo"> <!-- aka the home button for home page-->
+        <a class="logo" href="#home"> 
+          <img src="../assets/new_LIU_logo.png" alt="LIU Logo"> <!-- aka the home button for home page-->
         </a>
 
+        <style>
+          html {
+            scroll-behavior: smooth;
+          }
+        </style>
+
     <div class="links">
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="contact.html">Contact</a>
-        <a href="FAQ.html">FAQ</a>
+        <a class="about-events-contact-faq" href="#about">About</a>
+        <!-- (COMMENTING OUT FOR NOW) <a class="about-events-contact-faq" href="#events">Events</a>-->
+        <a class="about-events-contact-faq" href="#contact">Contact</a>
+        <a class="about-events-contact-faq" href="#faq">FAQ</a>
         <a class = "appointment" href="appointment.html">Book Appointment</a>
     </div>
     </div>
+  </header>
+
+<!--To Do: Improve Readability-->
+
+  <main>
+   <!-- Hero Section -->
+   <section class="hero" id="home">
+      <div class="hero-image-container">
+        <img src="/assets/hero_img.png" alt="Two hands holding a printed cut-out heart" id="hero_img">
+      </div>
+      <h1 class="hero-title">The Center at LIU Brooklyn<br> Psychological Services</h1>
+      <div class="hero-subtitle">
+        <h3>Your Path to Mental Well-being</h3>
+        <p id="subtitle-content">Providing confidential and supportive counseling for LIU-Brooklyn students.</p>
+        <button type="button" id="hero-button">Book Appointment</button>
+        <!--js to lead to appointment page-->
+        <script>
+          document.getElementById("hero-button").onclick = function () {
+            window.location.href = "appointment.html"; // Redirects to appointment.html
+          };
+        </script>
+
+      </div>
+    </section>
  
-  <footer>
-  </footer>
+
+    <!-- Support Section -->
+    <section class="support" id="about">
+      <div class="support-info"> 
+        <h2 id="support-subheading">Types of Support You Can Find</h2>
+        <p>We offer confidential counseling for a range of student needs, supporting your emotional and academic well-being.</p>
+      </div>
+
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-image">
+          <img src="/assets/card_image(1).png" alt="Frustrated man glaring at his MacBook">
+        </div>
+        <div class="card-content">
+          <h3>Navigating Academic Pressures</h3>
+          <p>College life can be demanding. We offer support for managing academic stress, test anxiety, and time management challenges. Let us help you achieve your academic goals while maintaining your well-being.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+        <img src="/assets/card_image(2).png" alt="Man holding his head in distress">
+      </div>
+        <div class="card-content">
+          <h3>Finding Balance at Home</h3>
+          <p>Family dynamics and home life can sometimes be sources of stress. Our counselors provide a safe space to explore and address these challenges, helping you build healthier relationships and coping strategies.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+        <img src="/assets/card_image(3).png" alt="Woman staring off to the distance in dismay.">
+        </div>
+        <div class="card-content">
+          <h3>Building Confidence in Social Settings</h3>
+          <p>Navigating social situations can feel overwhelming. We provide guidance to help you develop strong communication skills, manage social anxiety, and build meaningful connections. Gain the confidence to engage in conversations and create lasting relationships.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commitment Section -->
+  <section class="commitment">
+    <h2>Our Commitment to Your Well-Being</h2>
+    <div class="commitment-content">
+      <div class="commit-text">
+      <p id="yurr"> 
+        The LIU-Brooklyn Psychological Services Center is dedicated to providing free, confidential counseling to all enrolled LIU-Brooklyn students. We understand that navigating college life can present a variety of challenges, and we're here to help you through them.
+        Our commitment extends to fostering a diverse and inclusive environment where every student feels valued and respected. We offer a space of safety, trust, and openness, regardless of your background or identity. We have no session limits, so we are here for you for as long as you are a student at LIU.
+      </p>
+    </div>
+      <div class="commit-image">
+      <img src="/assets/commitment_img.jpeg" alt="Two hands holding a yellow flower">
+    </div>
+    </div>
+  </section>
+
+  <!--(COMMENTING OUT FOR NOW) Event section-->
+  <!--
+  <section class="events" id="events">
+    <div class="events-info">
+      <h2>Dummy events for now; we can put cards like "Coming soon"</h2>
+      <p> Dummy event#1, Dummy event #2</p>
+    </div>
+  </section>
+`-->
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 id="contact-heading">Visit Us or Contact Us</h2>
+    <div class="contact-info">
+      <img src="/assets/new_LIU_fullMap.png" alt="LIU Brooklyn map">
+
+      <div class="map-text">
+        <p>
+          Find us on the 5th floor of the Pratt building, room 510 on the LIU Brooklyn campus.  
+          <br>View the map below for directions. We're available by email at  
+          <a href="mailto:bkln-psychservices@liu.edu">bkln-psychservices@liu.edu</a>  
+          or by phone at <a href="tel:718-488-1266">718-488-1266</a>.
+
+          <br>For emergencies, call 911, campus safety at  
+          <a href="tel:718-488-1078">718-488-1078</a>, NYC Well at  
+          <a href="tel:1-888-WELL">1-888-WELL</a>, or text WELL to 65173.
+        </p> 
+      </div>
+
+    </div>
+  </section>
+
+  <!--
+  <section class="contact" id="contact">
+    <h2>Visit Us or Contact Us</h2>
+    <div class="contact-info">
+      <img src="/assets/new_LIU_fullMap.png" alt="LIU Brooklyn map">
+
+        <p>
+          Find us on the 5th floor of the Pratt building, room 510 on the LIU Brooklyn campus.  
+          <br>View the map below for directions. We're available by email at  
+          <a href="mailto:bkln-psychservices@liu.edu">bkln-psychservices@liu.edu</a>  
+          or by phone at <a href="tel:718-488-1266">718-488-1266</a>.  
+        </p>
+        <p>
+          For emergencies, call 911, campus safety at  
+          <a href="tel:718-488-1078">718-488-1078</a>, NYC Well at  
+          <a href="tel:1-888-WELL">1-888-WELL</a>, or text WELL to 65173.
+        </p>  
+
+    </div>
+  </section>
+  -->
+
+  <!--Counselor Section-->
+  <section class="counselors">
+    <div class="counselor-wrapper">
+      <div class="counselor-content">
+        <h2>Meet our Dedicated Team</h2>
+        <p>Each counselor is committed to providing evidence-based therapy in a supportive and confidential environment. We are dedicated to ongoing training and supervision to ensure the highest quality of care.</p>
+        <!--Collapsible List | Refer to this link: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+        <div class="collapsible-list">
+          <button class="accordion">Counselor One</button>
+          <div class="panel">
+            <p id="counselor-title"> Olivia Reynolds</p>
+            <p>A career and stress management counselor who helps clients build confidence and find balance. She incorporates coaching techniques and mindfulness in her approach.</p>
+          </div>
+          <button class="accordion">Counselor Two</button>
+          <div class="panel">
+            <p id="counselor-title"> David Thompson</p>
+            <p> A licensed mental health counselor with expertise in CBT and mindfulness. With over a decade of experience, he integrates wellness into therapy.</p>
+           </div>
+          <button class="accordion" class="collapsible">Counselor Three</button>
+          <div class="panel">
+            <p id="counselor-title"> Emily Carter</p>
+            <p>Specializing in academic stress and anxiety, Emily supports students and young adults through mindfulness and goal-setting. She's also an advocate for mental health in schools. </p>
+           </div>
+          <button class="accordion">Counselor Four</button>
+          <div class="panel">
+            <p id="counselor-title"> Emily Carter</p>
+            <p>A relationship and emotional well-being specialist who helps clients navigate personal challenges in a safe space. </p>
+           </div>
+        </div>
+        <!--Book Appointment-->
+        <div class="dedicated-button">
+        <a id= "dedicated-button" class = "appointment" href="appointment.html">Book Appointment</a>
+        </div>
+      </div>
+      
+      <div class="counselor-image">
+        <img src="/assets/aboutCounselor.png" alt="LIU Brooklyn map">
+      </div>
+    </div>
+  </section>
+
+<!--Testimonals  -->
+<section class="testimonials">
+  <div class="testimonials-wrapper">
+    <div class="testimonials-header">
+      <h2>Hear From Our Students</h2>
+      <p>Read student testimonials that highlight the positive and supportive experience of our counseling services.</p>
+    </div>
+    
+    <div class="testimonials-card-wrapper">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="/assets/studentReview(1).png" alt="Student photo">
+        </div>
+        <div class="testimonial-content">
+          <h4>Michael H.</h4>
+          <p>
+            The PSC helped me through a challenging time. I felt heard and supported, and I learned valuable coping skills.
+          </p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="/assets/studentReview(2).png" alt="Student photo">
+        </div>
+        <div class="testimonial-content">
+          <h4>Sarah M.</h4>
+          <p>
+            The PSC helped me through a challenging time. I felt heard and supported, and I learned valuable coping skills.
+          </p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="/assets/studentReview(3).png" alt="Anonymous photo">
+        </div>
+        <div class="testimonial-content">
+          <h4>Anonymous</h4>
+          <p>
+            The PSC helped me through a challenging time. I felt heard and supported, and I learned valuable coping skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- commitment section-->
+ <!--
+<section class="commitment-section">
+    <div class="commitment-text">
+      <h2>Our Commitment to Your Well-being</h2>
+      <p>
+        The LIU-Brooklyn Psychological Services Center is dedicated to providing 
+        free, confidential counseling to all eligible LIU-Brooklyn students. We 
+        understand that navigating college life can present a variety of challenges, 
+        and we're here to help you through them.
+      </p>
+      <p>
+        Our commitment extends to fostering a diverse and inclusive environment 
+        where every student feels valued and respected. We offer a space of safety, 
+        free from judgment. We have no session limits or requirements to disclose 
+        your identity. You remain eligible for services as long as you are a student 
+        at LIU.
+      </p>
+    </div>
+    
+    <div class="about-image">
+      <img src= "flowergirl image.png" alt= "girl holding flower"/>
+    </div>
+  </section>
+  -->
+
+  <section class="faq" id="faq">
+    <div class="faq_wrapper">
+      <div class="faq-header"><b><h2>Frequently Asked Questions</h2></b></div>
+      <p>Confidentiality is a priority. Your privacy is protected by strict confidentiality policies. Your information will not be shared without your explicit consent, except in cases of immediate danger.</p>
+     
+      <button class="accordion">How do I make an appointment?</button>
+      <div class="panel">
+        <p>You can make an appointment with LIU counselors through the 'Book Appointment' button. From there, you will be able to select a counselor of your choosing based on the time and date you are available.</p>
+      </div>
+
+      <button class="accordion">Am I eligible for counseling?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Does the PSC have session limits?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Will my parents/professors/the University know if I came to counseling?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Can I do text or chat-based therapy?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Where is the clinic located?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Does the PSC have session limits?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">I'm not going through anything that serious, do I need counseling?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Are all PSC therapists students?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Are all PSC therapists students?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">What is psychological assesment?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Can I get tested for ADD/ADHD/a learning disability here?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">What if I'm not happy with my therapist?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Does the PSC take my insurance? If not, how much does counseling cost out-of-pocket?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+    </div>
+  </section>
+
+  <br>
+  <br>
+  <br>
+
+  </main>
+<!--Footer | Social Media Icons Not Showing Up-->
+
+    <footer class="footer-container">
+      <div class="footer-content">
+        <h2 id="">Connect With Us</h2>
+        <p class = "footer-text">Prioritizing your mental health is an essential part of your overall well-being. We understand that seeking support can be a significant step, and we're here to make that process as comfortable and accessible as possible. Our confidential services are designed to provide you with the tools and support you need to navigate life's challenges. Reach out to us to begin your journey towards a healthier, more balanced life.</p>
+
+        <h3>Socials</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+
+          </div>
+
+          <div class="footer-button">
+            <a class = "footer-appointment" href="appointment.html">Book Appointment</a>
+          </div>
+
+          <!--Back to the top of the page-->
+          <div class="Arrow-Up">
+            <a href="#home" aria-label="Arrow-Up">
+              <i class="fas fa-angle-double-up"></i>
+            </a>
+          </div>
+
+      </div>
+    </div>
+
+  <script src="../js/main.js"></script>
+
 </body>
 </html>
