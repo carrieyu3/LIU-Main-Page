@@ -71,7 +71,6 @@ html {
 }
 
 
-
 /* Hero */
 
 #hero_img {
@@ -79,10 +78,9 @@ html {
     height: auto;
     opacity: 0.65;
     display: block;
-  }
- 
- 
- .hero-image-container {
+} 
+
+.hero-image-container {
     background-image: url(hero_img.png);
     background-size: cover;
     background-position: center;
@@ -93,6 +91,7 @@ html {
     padding-top: 10px; /* Ensure the navbar doesn't overlap */
     margin-top: 60px;
  }
+
  .hero-title{
   display: flex;
   justify-content: flex-start;
@@ -104,31 +103,29 @@ html {
   padding-top: 11%;
  }
  
- 
- .hero-subtitle{
+.hero-subtitle{
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 50vw;
     top: 75%;
     right: 2%;
- }
+}
  
- 
- .hero-subtitle h3 {
+.hero-subtitle h3 {
     font-size: 40px;
     font-weight: 600;
     margin: 0;
     font-size: clamp(8px, 5vw, 40px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
- }
- #subtitle-content {
+}
+
+#subtitle-content {
     font-size: 28px;
     font-weight: 400;
  
- }
+}
  
- 
- #hero-button {
+#hero-button {
     background-color: #FFC72C;
     color: white;
     border: none;
@@ -138,40 +135,36 @@ html {
     font-weight: 800;
     margin-top: 3%;
     cursor: pointer;
-  }
+}
  
- #hero-button:hover{
+#hero-button:hover{
     background-color: #f3cb5f;
- }
+}
  
  
- /* Media Query for Smaller Screens */
- @media (max-width: 768px) {
-    .hero-image-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+.hero-image-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: clamp(20px, 8vw, 40px);
+    text-align: center;
+    max-width: 90%;
+    margin-top: 130px;
+}
+
+@media (max-width: 1920px) {
+    .hero-subtitle {
+        display: none;
     }
+}
+}
  
- 
-    .hero-title {
-        font-size: clamp(20px, 8vw, 40px);
-        text-align: center;
-        max-width: 90%;
-        margin-top: 130px;
-    }
-    
-    @media (max-width: 1920px) {
-        .hero-subtitle {
-            display: none;
-        }
-    }
- 
- 
- 
- }
- 
- /*************************** About ****************/
+/*************************** About ****************/
 
 .support-info {
     font-size: 25px;
@@ -182,22 +175,22 @@ html {
     width: 60%;
     padding-top: 6px;
 }
- .card-wrapper {
+
+.card-wrapper {
     display: flex;
     gap: 40px;
     margin: 0 auto;
     padding: 60px 60px;
-  }
+}
 
-
-  .card{
+.card{
     display: flex;
     background-color: #69B3E7;
     border-radius: 30px;
     color: #f2f2f2;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+}
 
 .card-image img{
     width: 200%;
@@ -260,10 +253,10 @@ html {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 40px;
-  }
+}
   
-  /* Left Column: Text Box */
-  .commitment-text {
+/* Left Column: Text Box */
+.commitment-text {
     background-color: #69B3E7;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -274,34 +267,33 @@ html {
     box-sizing: border-box;
     text-align: left;
     width: 100%;
-  }
-  
-  .commitment-text h2 {
+}
+
+.commitment-text h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-  }
-  
-  .commitment-text p {
+}
+
+.commitment-text p {
     font-size: 16px;
     font-size: clamp(1px, 3vw, 16px); /*for responsive text: 3 parameters (minimum value, preferred value, maximum value) */
     font-weight: 400;
     line-height: 1.6;
-  }
+}
 
-  
-  /* Right Column: Image */
-  .commitment-image {
+/* Right Column: Image */
+.commitment-image {
     flex: 1;
     padding: 1rem;
     text-align: center;
-  }
-  
-  .commitment-image img {
+}
+
+.commitment-image img {
     max-width: 100%;
     height: auto;
     border-radius: 20px; 
-  }
+}
 
 
 /*BOOK Appointment Page*/
@@ -393,59 +385,60 @@ html {
 
 .counselor-content, .counselor-image {
     padding: 10px;
-  }
+}
 
-  .counselor-content {
+.counselor-content {
     width: 50%;
-  }
-  .counselor-image {
-    width: 40%;
-  }
+}
 
-  .counselor-image img{
+.counselor-image {
+    width: 40%;
+}
+
+.counselor-image img{
     width: 500px;
     height: 550px;
-  }
+}
 
-  /*styling*/
-  .testimonials {
+/*styling*/
+.testimonials {
     text-align: center;
     padding: 50px 20px;
-  }
-  
-  .testimonial-content h4 {
-    color: white;
-  }
+}
 
-  .testimonials-wrapper {
+.testimonial-content h4 {
+    color: white;
+}
+
+.testimonials-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .testimonials-header h2 {
+}
+
+.testimonials-header h2 {
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
     color: #69B3E7;
-  }
-  
-  .testimonials-header p {
+}
+
+.testimonials-header p {
     font-size: 1.5625rem;
     color: #000000;
     padding-top: 10px;
     margin-bottom: 60px;
-  }
-  
-  .testimonials-card-wrapper {
+}
+
+.testimonials-card-wrapper {
     display: flex;
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
-  }
-  
-  .testimonial-card {
+}
+
+.testimonial-card {
     background: #69B3E7; /* Light blue */
     border-radius: 30px;
     padding: 20px;
@@ -455,9 +448,9 @@ html {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-  }
-  
-  .testimonial-card::before {
+}
+
+.testimonial-card::before {
     content: "";
     position: absolute;
     left: 0;
@@ -466,27 +459,25 @@ html {
     height: 100%;
     background: #FFD24C; /* Yellow border on the left */
     border-radius: 15px 0 0 15px;
-  }
-  
-  .testimonial-img img {
+}
+
+.testimonial-img img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-  }
-  
-  .testimonial-content h4 {
+}
+
+.testimonial-content h4 {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 10px 0;
-  }
-  
-  .testimonial-content p {
+}
+
+.testimonial-content p {
     font-size: 1rem;
     color: #fff;
     margin-bottom: 0;
-  }
-  
-  
+}
 
 
 /*collapsible effect for the questions*/
@@ -596,6 +587,7 @@ html {
     color:#69B3E7;
     max-width: 50%;
 }
+
 .commitment-content {
     display: flex;
     justify-content: center;
@@ -606,8 +598,6 @@ html {
     padding-right: 40px;
     margin: 20px;
 }
-
-
 
 .commit-image img {
     flex: 1; /* Makes it take equal space */
@@ -654,6 +644,7 @@ html {
     padding-left: 40px;
     padding-right: 40px;
 }
+
 #contact-heading{
     margin-left: 3%;
     width: 60%;
@@ -687,5 +678,3 @@ html {
     font-size: 16px;
     font-weight: 400;
 }
-
-
