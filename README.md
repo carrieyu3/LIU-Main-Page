@@ -6,3 +6,7 @@ Objectives And Goals:
 - Improve Navigation: Redesign the website for clearer, more intuitive access to mental health services.
 - Streamline Access: Implement an online scheduling system for counseling appointments.
 - Engagement: Use materials such as implementing a QR code on a flyer so students are able to access LIU brooklyn mental health services.
+
+The Team:
+- UI/UX Designers: Franchesca Salas and Marcus Jade Demery
+- Software Developers: Carrie Yu, Sumaiya Fatema, and Edwin Berrouet
