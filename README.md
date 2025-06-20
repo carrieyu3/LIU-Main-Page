@@ -8,5 +8,5 @@ Objectives And Goals:
 - Engagement: Use materials such as implementing a QR code on a flyer so students are able to access LIU brooklyn mental health services.
 
 The Team:
-- UI/UX Designers: Franchesca Salas and Marcus Jade Demery
+- UI/UX Designers: Franchesca Salas and Marcus Jade Demery.
 - Software Developers: Carrie Yu, Sumaiya Fatema, and Edwin Berrouet
